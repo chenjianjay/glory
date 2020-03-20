@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "全部",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 400,
+  "usingComponents": {}
+}

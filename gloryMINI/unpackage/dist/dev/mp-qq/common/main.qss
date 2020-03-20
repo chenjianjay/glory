@@ -1,0 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+.global-bg{
+		background-image: -webkit-linear-gradient(110deg,  #9709F7, #581AE1);
+		background-image: linear-gradient(-20deg,  #9709F7, #581AE1);
+}
+

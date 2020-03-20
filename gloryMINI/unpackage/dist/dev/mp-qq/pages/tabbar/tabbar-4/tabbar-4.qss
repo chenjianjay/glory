@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background-color: #f4f4f4;
+}
+.header-bg {
+  width: 100%;
+  height: 300rpx;
+  background-image: -webkit-linear-gradient(95deg, #9709F7, #581AE1);
+  background-image: linear-gradient(-5deg, #9709F7, #581AE1);
+  position: fixed;
+  top: 0;
+}
+.userinfo {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.userinfo image {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.userinfo .nickname {
+    color: #FFFFFF;
+    font-size: 35rpx;
+}
+.sign-in {
+  position: relative;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  padding: 30rpx;
+}
+.sign-in .wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+}
+.sign-in .wrap text {
+      color: #FF9138;
+}
+.sign-in-btn {
+    width: 200rpx;
+    margin-left: 226rpx;
+    margin-top: 30rpx;
+}
+.feature-list {
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 50rpx;
+  border-radius: 10rpx;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.feature-list .feature-list-item {
+    height: 90rpx;
+    position: relative;
+    border-bottom: 1px dashed #808080;
+}
+.feature-list .feature-list-item .icon {
+      width: 60rpx;
+      height: 60rpx;
+      position: absolute;
+      left: 15rpx;
+      top: 15rpx;
+}
+.feature-list .feature-list-item .msg {
+      line-height: 90rpx;
+      padding-left: 90rpx;
+}
+.feature-list .feature-list-item .arrow {
+      width: 30rpx;
+      height: 50rpx;
+      position: absolute;
+      top: 20rpx;
+      right: 30rpx;
+}
+.feature-list .feature-list-item:last-child {
+    border-bottom: none;
+}
+
