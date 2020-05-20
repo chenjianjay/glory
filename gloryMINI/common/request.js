@@ -1,5 +1,5 @@
-const baseUrl = 'http://localhost:3003/glory'; 
-// const baseUrl = 'https://www.mynne.cn/glory'; 
+// const baseUrl = 'http://localhost:3003/glory'; 
+const baseUrl = 'https://www.mynne.cn/glory'; 
 
 module.exports = (url, data) => {
 	let httpDefaultOpts = {
