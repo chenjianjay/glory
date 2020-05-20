@@ -47,8 +47,20 @@ export default {
 		};
 	},
 	onLoad() {
-		this.getSkims()
-		this.getNotice()
+		let uuid = ''
+		try{
+			uuid = uni.getStorageSync('uuid')
+		}catch(e){
+			//TODO handle the exception
+		}
+		if (!uuid) {
+			uni.navigateTo({
+				url: '../login/login'
+			})
+		} else {
+			this.getSkims()
+			this.getNotice()
+		}
 	},
 	onPullDownRefresh() {
 		this.getSkims();
@@ -89,6 +101,7 @@ export default {
 		},
 		getSkims() {
 			this.doRequest('/skim/getSkims').then(res=>{
+				console.log(res);
 				let data = res.data.map(i=>{
 					i.closeDate = this.formatdate(i.closeDate)
 					return i

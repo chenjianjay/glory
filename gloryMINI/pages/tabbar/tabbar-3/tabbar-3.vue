@@ -24,6 +24,7 @@
 					</button>
 				</view>
 			</view>
+			<!-- #ifdef MP-QQ -->
 			<view class="list">
 				<view class="fl-message">
 					<view class="sub-title">观看完整视频（{{task.dailyWatchVideoTimes}}次）</view>
@@ -31,6 +32,7 @@
 				</view>
 				<button class="fr-btn" size="mini" @click="video()">去完成</button>
 			</view>
+			<!-- #endif -->
 			<view class="list">
 				<view class="fl-message">
 					<view class="sub-title">邀请2位新用户（{{task.dailyInviteTimes}}/2）</view>
@@ -84,6 +86,7 @@
 				</view>
 				<button class="fr-btn" size="mini">去完成</button>
 			</view>
+			<!-- #ifdef MP-QQ -->
 			<view class="list">
 				<view class="fl-message">
 					<view class="sub-title">观看完整视频1999次（{{task.totalWatchVideoTimes}}/1999）</view>
@@ -91,6 +94,7 @@
 				</view>
 				<button class="fr-btn" size="mini" @click="video()">去完成</button>
 			</view>
+			<!-- #endif -->
 		</view>
 		<!-- #ifdef MP-QQ -->
 		<ad unit-id="39c018b107250732f35e730e4f104b6a" type="card"></ad>
@@ -257,7 +261,7 @@
 		height: 100%;
 	}
 	.header{
-		margin-top: 30upx;
+		padding-top: 30upx;
 		font-size: 40upx;
 		margin-left: 30rpx;
 	}

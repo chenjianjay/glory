@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/tabbar/login/login",
+    "pages/tabbar/tabbar-1/tabbar-1",
     "pages/tabbar/tabbar-2/tabbar-2",
     "pages/tabbar/tabbar-3/tabbar-3",
     "pages/tabbar/tabbar-4/tabbar-4",
@@ -53,5 +54,6 @@
       "desc": ""
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap7.json"
 }

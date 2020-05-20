@@ -13,6 +13,9 @@
 				开黑群{{id+1}}
 			</view>
 		</view>
+		<!-- #ifdef MP-WEIXIN -->
+		<h1>	微信端该功能不可用</h1>
+		<!-- #endif -->
 		<!-- #ifdef MP-QQ -->
 		<view class="bottom-adv">
 			<ad unit-id="39c018b107250732f35e730e4f104b6a" type="card"></ad>
